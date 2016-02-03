@@ -20,3 +20,4 @@ class SignUpForm(forms.ModelForm):
 			if letter in symbols:
 				raise forms.ValidationError("Name cannot contain symbols.")
 		return full_name
+
