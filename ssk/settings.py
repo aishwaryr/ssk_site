@@ -1,3 +1,7 @@
+'''Create a file called settings_secret.py and put your sensetive data
+in that file and add that to .gitignore'''
+from .settings_secret import *
+
 """
 Django settings for ssk project.
 
@@ -20,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '&gpia5ow56+yz-94$gg_)24ob@4sm$0n#_wyhd@h(bs+%!-d6q'
+SECRET_KEY = secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -81,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'ssk1',
         'USER': 'napster',
-        'PASSWORD': 'napsterPOST',
+        'PASSWORD': database_password,
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -93,7 +97,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 

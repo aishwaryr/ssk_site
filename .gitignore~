@@ -1,3 +1,5 @@
+settings_secret.py
+*.pyc
 .DS_Store
 db.sqlite3
 

@@ -3,6 +3,7 @@ from django.db import models
 class SignUp(models.Model):
 	email = models.EmailField()
 	full_name = models.CharField(max_length=120, blank=True, null=True)
+	phone_number = models.CharField(max_length=12)
 	timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
 	updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
